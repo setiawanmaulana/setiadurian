@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak Setia Durian</title>
+  <link rel="shorcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- header section  -->
+
+  <div class="border-bottom header">
+    <header class="container-xxl d-flex flex-wrap justify-content-center pt-3">
+
+      <div class="col-md-3 ms-5">
+        <a href="#" class="text-decoration-none">
+          <img src="images/logo.png" alt="logo setia durian" width="180px" />
+        </a>
+      </div>
+      <div class="form-search">
+        <form>
+          <input type="text" placeholder="Cari Produk" class="pencarian ms-3 my-2" />
+          <a class="btn-search text-light me-2">
+            Search
+          </a>
+        </form>
+      </div>
+      <div class="col-md-3 ms-5">
+        <a href="kontak.html" class="btn btn-link text-decoration-none text-dark ms-5 me-3">
+          <img src="images/maps-and-flags (1).png" class="icont" alt="location" /> Lokasi
+        </a>
+        <a href="produk.html" class="btn btn-success align-items-center ms-3">
+          <img src="images/shopping-cart (1).png" alt="keranjang" width="19px" class="me-2" />Belanja
+        </a>
+      </div>
+
+      <nav class="container ">
+        <div class="d-flex justify-content-center navbar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a href="produk.html" class="nav-link">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a href="kerjasama.html" class="nav-link">Kerja Sama</a>
+            </li>
+            <li class="nav-item">
+              <a href="tentang.html" class="nav-link">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a href="kontak.html" class="nav-link active">Kontak Kami</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <div class="header-2">
+    <nav class="navbar fixed-top ">
+      <div class="container-fluid border-bottom">
+        <a href="/" class="navbar-brand text-decoration-none">
+          <img src="images/logo.png" alt="logo setia durian" width="180px" />
+        </a>
+        <div class="right">
+          <a href="kontak.html" class="btn btn-link border text-decoration-none text-dark mx-2">
+            <img src="images/maps-and-flags (1).png" class="icont" alt="location" /> Lokasi
+          </a>
+          <button onclick="hideShow()" class="src"><i class="fas fa-search"></i></button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span><i class="fas fa-bars"></i></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <a href="/" class="navbar-brand text-decoration-none">
+              <img src="images/logo.png" alt="logo setia durian" class="me-2" width="180px" />
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="form-search mb-4">
+              <form class="mb-2 justify-content-center">
+                <input type="text" placeholder="Cari Produk" class="pencarian-2 ms-3 my-2" />
+                <a class="btn-search me-2">
+                  <span class="text-light">Search</span>
+                </a>
+              </form>
+            </div>
+            <table class="table">
+              <tr>
+                <td>
+                  <a href="index.html" class="nav-link fw-bold p-2">Beranda</a>
+                </td>
+                <td>
+                  <a href="tentang.html" class="nav-link fw-bold p-2">Tentang Kami</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="produk.html" class="nav-link fw-bold p-2">Produk</a>
+                </td>
+                <td>
+                  <a href="kontak.html" class="nav-link fw-bold p-2">Kontak Kami</a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <a href="kerjasama.html" class="nav-link fw-bold p-2">Kerja Sama</a>
+                </td>
+              </tr>
+            </table>
+            <div class="mx-5">
+              <a href="#" class="btn btn-link border me-4 text-decoration-none text-dark mx-4 my-3">
+                <img src="images/maps-and-flags (1).png" class="icont"  alt="location" />
+                Lokasi
+              </a>
+              <a href="produk.html" class="btn btn-success my-3">
+                <img src="images/shopping-cart (1).png" alt="keranjang" width="19px" class="me-2" /><span
+                  class="text-light">Belanja</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="color-search" id="search">
+        <ul class="search" >
+            <li>
+                <input type="text" id="txtsearch" class="txtsearch search_input" name="txtsearch" placeholder="Cari Produk">
+            </li>
+            <li>
+                <i class="fas fa-search my-3 mx-4"></i>
+            </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+
+  <!-- contact section  -->
+  <section class="contact">
+    <div style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+      <div class="bd-example m-4 border-0">
+        <nav aria-label="breadcrumb" class="navbar">
+          <ol class="breadcrumb">
+            <div class="kembali">
+              <a href="index.html"
+                ><img
+                  src="images/back_icon.png"
+                  class="mx-2"
+                  alt="back icon"
+                  width="25px"
+                />Kembali</a
+              >
+              <a class="mx-3">|</a>
+            </div>
+            <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+            <li class="breadcrumb-item" aria-current="page">Kontak Kami</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  
+  <div class="container my-5 text-center">
+    <h1 class="text-body-emphasis pb-4">Kontak Kami</h1>
+    <div class="pt-5 pb-3 text-center">
+      <p class="lead">
+        <strong>Setia Durian</strong> adalah website penyedia durian dengan
+        kualitas terbaik dan disini juga kami menyediakan produk olahan durian
+        seperti Ketan Durian, Pancake Durian dan Chease Cake Durian. Selain
+        jual durian secara utuh (kepala), kami juga menyediakan durian kupas.
+        Sehingga akan lebih mudah dinikmati dan tentunya lebih praktis.
+      </p>
+      <p class="lead">
+        Selain menjual berbagai durian kami juga menjual buah - buah eksotis
+        lain yang dapat langsung dinikmati oleh anda.
+      </p>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="card border-0">
+    <div class="card-body bg-light p-2">
+      <div class="row d-flex justify-content-center maps">
+        <div class="col">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3954.870852624737!2d108.703127!3d-7.589033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMzUnMjAuNSJTIDEwOMKwNDInMTEuMyJF!5e0!3m2!1sid!2sid!4v1701567971017!5m2!1sid!2sid" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="col container hijau text-light py-5 ">
+          <h3 class="my-2">Setia Durian Indonesia</h3>
+          <div>
+            <p><span>Bojongsari, Kec. Padaherang, Kab. Pangandaran</span>
+              Jawa Barat, Indonesia - 46384</p>
+          </div>
+    
+          <div>
+            <p><i class="fas fa-phone"></i>
+             0859 144 701 587</p>
+          </div>
+          <div class="text-light text-decoration-none">
+            <p><i class="fas fa-envelope"></i> support@setiadurian.com</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="py-5 py-xl-6 my-5">
+  <div class="container mb-2 mb-md-6">
+    <div class="row justify-content-md-center">
+      <div class="pemesanan col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 text-center">
+        <h1 class="mb-4 display-5">Tinggalkan Pesan</h1>
+        <p class="text-secondary mb-4 mb-md-5">
+          Kami di Setia Durian menerima pemesanan online dan siap
+          mengantar sesuai tujuan.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-lg-center">
+      <div class="col-12 col-lg-9">
+        <div class="alert my-alert alert-success alert-dismissible fade show d-none" role="alert">
+          <strong>Pesan Kamu Sudah Kami Terima !</strong> kami akan segera menghubungi anda untuk konfirmasi lebih lanjut.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="bg-white border rounded shadow-sm overflow-hidden">
+          <form name="kontak">
+            <div class="row gy-4 gy-xl-3 p-3 p-xl-3">
+              <div class="col-12 col-md-6">
+                <label for="fullname" class="form-label">Nama Lengkap <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="fullname" name="nama" required />
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="phone" class="form-label">No Telp / Wa <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-telephone" viewBox="0 0 16 16">
+                      <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                    </svg>
+                  </span>
+                  <input type="tel" class="form-control" id="phone" name="nomor" required />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="phone" class="form-label">Email <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-regular fa-envelope"></i>
+                  </span>
+                  <input type="tel" class="form-control" id="email" name="email" required />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="type" class="form-label">Kepentingan 
+                  <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <select list="type"  class="form-control"  name="tipe" required >
+                    <option value="Umum">Umum</option>
+                    <option value="Kerja Sama">Kerja Sama</option>
+                    <option value="Masukan">Masukan</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message
+                  <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="message" name="pesan" rows="4" required></textarea>
+              </div>
+              <div class="col-12">
+                <div class="d-grid">
+                  <button class="btn btn-success kirim-btn btn-lg" type="submit">
+                    Kirim
+                  </button>
+                  <button class="btn btn-success loading-btn d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                    <span role="status">Loading...</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- floating button wa -->
+
+  <a class="wa-btn-1"
+    href="https://api.whatsapp.com/send/?phone=62859144701587&text&type=phone_number&app_absent=0"><img
+      src="images/wa_float.png" alt="wa" width="160px" /></a>
+
+  <a class="wa-btn-2"
+    href="https://api.whatsapp.com/send/?phone=62859144701587&text&type=phone_number&app_absent=0"><img
+      src="images/wa_float_short.png" alt="wa" width="55px" /></a>
+
+
+  <!-- footer sections -->
+
+  <footer class="footer-distributed shadow-lg">
+
+    <div class="footer-left">
+      <img src="images/setiadurian.png">
+      <h3>Setia <span>Durian</span></h3>
+
+      <p class="footer-links">
+        <a href="#">Beranda</a>
+        |
+        <a href="#">Produk</a>
+        |
+        <a href="#">Kerja Sama</a>
+        <br>
+        <a href="#">Tentang Kami</a>
+        |
+        <a href="#">Kontak Kami</a>
+
+      </p>
+
+      <p class="footer-company-name">© 2023 Setia Durian all right reserved.</p>
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <i class="fa-solid fa-location-dot"></i>
+        <p><span>Bojongsari, Kec. Padaherang, Kab. Pangandaran</span>
+          Jawa Barat, Indonesia - 46384</p>
+      </div>
+
+      <div>
+        <i class="fas fa-phone"></i>
+        <p>+62 859-144-701-587</p>
+      </div>
+      <div>
+        <i class="fas fa-envelope"></i>
+        <p><a href="mailto:setiawanmaulana328@gmail.com">support@setiadurian.com</a></p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>Mengenai Toko Kami</span>
+        Kami Setia Durian merupakan toko penyedia durian dan produk olahan durian secara online maupun offline.
+      </p>
+      <div class="footer-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+   <!-- js send contact form -->
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwx5pLdMeuDM9q3fssRhSKkHdVrg16Qxm7Xmv07CJtn1LL-uWpfIAFhuj64rS2ez8Vg/exec'
+    const form = document.forms['kontak']
+    const kirimBtn = document.querySelector('.kirim-btn');
+    const loadingBtn = document.querySelector('.loading-btn');
+    const myAlert = document.querySelector('.my-alert');
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      //ketika di klik tampilkan btn loading hilangkan btn kirim
+      loadingBtn.classList.toggle('d-none');
+      kirimBtn.classList.toggle('d-none');
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          //setelah terkirim kembali tampilkan btn kirim dan tampilkan alert lalu reset form
+          loadingBtn.classList.toggle('d-none');
+          kirimBtn.classList.toggle('d-none');
+          myAlert.classList.toggle('d-none');
+          form.reset();
+          console.log('Success!', response);
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <!-- custom js  -->
+  <script src="script.js"></script>
+
+  <!-- custom bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

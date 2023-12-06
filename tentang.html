@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Setia Durian</title>
+  <link rel="shorcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- header section  -->
+
+  <div class="border-bottom header">
+    <header class="container-xxl d-flex flex-wrap justify-content-center pt-3">
+      <div class="col-md-3 ms-5">
+        <a href="/" class="text-decoration-none">
+          <img src="images/logo.png" alt="logo setia durian" width="180px" />
+        </a>
+      </div>
+      <div class="form-search">
+        <form>
+          <input type="text" placeholder="Cari Produk" class="pencarian ms-3 my-2" />
+          <a class="btn-search text-light me-2"> Search </a>
+        </form>
+      </div>
+      <div class="col-md-3 ms-5">
+        <a href="kontak.html" class="btn btn-link text-decoration-none text-dark ms-5 me-3">
+          <img src="images/maps-and-flags (1).png" class="icont" alt="location" /> Lokasi
+        </a>
+        <a href="produk.html" class="btn btn-success align-items-center ms-3">
+          <img src="images/shopping-cart (1).png" alt="keranjang" width="19px" class="me-2" />Belanja
+        </a>
+      </div>
+
+      <nav class="container">
+        <div class="d-flex justify-content-center navbar">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a href="produk.html" class="nav-link">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a href="kerjasama.html" class="nav-link">Kerja Sama</a>
+            </li>
+            <li class="nav-item">
+              <a href="tentang.html" class="nav-link active">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a href="kontak.html" class="nav-link">Kontak Kami</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <div class="header-2">
+    <nav class="navbar fixed-top ">
+      <div class="container-fluid border-bottom">
+        <a href="/" class="navbar-brand text-decoration-none">
+          <img src="images/logo.png" alt="logo setia durian" width="180px" />
+        </a>
+        <div class="right">
+          <a href="kontak.html" class="btn btn-link border text-decoration-none text-dark mx-2">
+            <img src="images/maps-and-flags (1).png" class="icont" alt="location" /> Lokasi
+          </a>
+          <button onclick="hideShow()" class="src"><i class="fas fa-search"></i></button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span><i class="fas fa-bars"></i></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <a href="/" class="navbar-brand text-decoration-none">
+              <img src="images/logo.png" alt="logo setia durian" class="me-2" width="180px" />
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="form-search mb-4">
+              <form class="mb-2 justify-content-center">
+                <input type="text" placeholder="Cari Produk" class="pencarian-2 ms-3 my-2" />
+                <a class="btn-search me-2">
+                  <span class="text-light">Search</span>
+                </a>
+              </form>
+            </div>
+            <table class="table">
+              <tr>
+                <td>
+                  <a href="index.html" class="nav-link fw-bold p-2">Beranda</a>
+                </td>
+                <td>
+                  <a href="tentang.html" class="nav-link fw-bold p-2">Tentang Kami</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="produk.html" class="nav-link fw-bold p-2">Produk</a>
+                </td>
+                <td>
+                  <a href="kontak.html" class="nav-link fw-bold p-2">Kontak Kami</a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <a href="kerjasama.html" class="nav-link fw-bold p-2">Kerja Sama</a>
+                </td>
+              </tr>
+            </table>
+            <div class="mx-5">
+              <a href="#" class="btn btn-link border me-4 text-decoration-none text-dark mx-4 my-3">
+                <img src="images/maps-and-flags (1).png" class="icont"  alt="location" />
+                Lokasi
+              </a>
+              <a href="produk.html" class="btn btn-success my-3">
+                <img src="images/shopping-cart (1).png" alt="keranjang" width="19px" class="me-2" /><span
+                  class="text-light">Belanja</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="color-search" id="search">
+        <ul class="search" >
+            <li>
+                <input type="text" id="txtsearch" class="txtsearch search_input" name="txtsearch" placeholder="Cari Produk">
+            </li>
+            <li>
+                <i class="fas fa-search my-3 mx-4"></i>
+            </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+
+  <!-- gambar section  -->
+  <div class="gambar-2"></div>
+
+  <!-- section tentang kami  -->
+  <div style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+    <div class="bd-example m-4 border-0">
+      <nav aria-label="breadcrumb" class="navbar">
+        <ol class="breadcrumb">
+          <div class="kembali">
+            <a href="index.html"><img src="images/back_icon.png" class="mx-2" alt="back icon" width="25px" />Kembali</a>
+            <a class="mx-3">|</a>
+          </div>
+          <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+          <li class="breadcrumb-item" aria-current="page">Tentang Kami</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container my-5 text-center">
+    <h1 class="text-body-emphasis pb-4">Durian yang enak menyatukan kita</h1>
+    <div class="pt-5 pb-3 text-center">
+      <p class="lead">
+        <strong>Setia Durian</strong> adalah website penyedia durian dengan
+        kualitas terbaik dan disini juga kami menyediakan produk olahan durian
+        seperti Durian Ketan, Pancake Durian dan Chease Cake Durian. Selain
+        jual durian secara utuh (kepala), kami juga menyediakan durian kupas.
+        Sehingga akan lebih mudah dinikmati dan tentunya lebih praktis.
+      </p>
+      <p class="lead">
+        Selain menjual berbagai durian kami juga menjual buah - buah eksotis
+        lain yang dapat langsung dinikmati oleh anda.
+      </p>
+    </div>
+  </div>
+
+  <!-- team section  -->
+
+  <div class="container overflow-hidden">
+    <div class="row gy-4 gy-lg-3 gx-xxl-5">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border-0 border-bottom border-success shadow-sm overflow-hidden">
+          <div class="card-body p-0">
+            <figure class="m-0 p-0">
+              <img class="img-fluid" loading="lazy" src="images/setiawam.jpg" alt="" />
+              <figcaption class="m-0 p-4">
+                <h4 class="mb-1">Setiawan Maulana</h4>
+                <p class="text-secondary mb-0">Ketua Kelompok</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border-0 border-bottom border-success shadow-sm overflow-hidden">
+          <div class="card-body p-0">
+            <figure class="m-0 p-0">
+              <img class="img-fluid" loading="lazy" src="images/ashifaul.jpg" alt="" />
+              <figcaption class="m-0 p-4">
+                <h4 class="mb-1">Ashifaul Fajriah</h4>
+                <p class="text-secondary mb-0">Anggota Kelompok</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border-0 border-bottom border-success shadow-sm overflow-hidden">
+          <div class="card-body p-0">
+            <figure class="m-0 p-0">
+              <img class="img-fluid" loading="lazy" src="images/rafly.jpg" alt="" />
+              <figcaption class="m-0 p-4">
+                <h4 class="mb-1">M. Rafly Hendriansyah</h4>
+                <p class="text-secondary mb-0">Anggota Kelompok</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- pelayanan  -->
+
+  <div class="container pelayanan">
+    <div class="row text-center">
+      <div class="col-lg-4">
+        <img src="images/fruit.png" class="bd-placeholder-img rounded-circle" width="140px" alt="" />
+        <h4 class="fw-bold my-3">Good Fruits</h4>
+        <p>
+          Kami berkomitment menyajikan buah durian dan buah eksotis premium lainnya dengan kualitas terbaik.
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <img src="images/service.png" width="140px" alt="" />
+        <h4 class="fw-bold my-3">Good Services</h4>
+        <p>
+          Pelayanan merupakan fokus utama kami. Kami akan selalu berusaha memberikan pelayanan yang terbaik, Garansi
+          serta selalu menjaga kebersihan.
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <img src="images/prince.png" width="140px" alt="" />
+        <h4 class="fw-bold my-3">Good Prince</h4>
+        <p>
+          Memberikan harga terbaik dan wajar untuk pelanggan, reseller, dan partner.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- testimonial section  -->
+
+  <section class="testimonial mt-5" id="testimonial">
+    <div class="container col-xxl-8 px-4">
+      <h1 class="text-center my-5">Testimoni Pelanggan</h1>
+
+      <div class="testimonial-box-container">
+        <div class="testimonial-box">
+          <div class="box-top">
+            <div class="name-time">
+              <strong>Yeni Rahmawati</strong>
+              <span>12 November 2023</span>
+            </div>
+
+            <div class="reviews">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="client-comment">
+            <p>
+              Duriannya enak banget kata suami juga rasanya kayak durian dari
+              Ucok medan.
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonial-box">
+          <div class="box-top">
+            <div class="name-time">
+              <strong>Ade Roni</strong>
+              <span>13 November 2023</span>
+            </div>
+
+            <div class="reviews">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="client-comment">
+            <p>
+              Duriannya Bagus Semua tidak ada yang hambar intinya durian yang
+              saya beli manis semua.
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-box">
+          <div class="box-top">
+            <div class="name-time">
+              <strong>Reni Sumartini</strong>
+              <span>15 November 2023</span>
+            </div>
+
+            <div class="reviews">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="client-comment">
+            <p>
+              Duriannya manis dan mulus semua, saya sampe beli berkali kali tidak mengecewakan pokoknya.
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-box">
+          <div class="box-top">
+            <div class="name-time">
+              <strong>Revina Dwiyanti</strong>
+              <span>16 November 2023</span>
+            </div>
+
+            <div class="reviews">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <div class="client-comment">
+            <p>
+              Duriannya Bagus dan manis bangett tidak ada yang hambar, Enak banget pokoknya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- floating button wa -->
+
+  <a class="wa-btn-1"
+    href="https://api.whatsapp.com/send/?phone=62859144701587&text&type=phone_number&app_absent=0"><img
+      src="images/wa_float.png" alt="wa" width="160px" /></a>
+
+  <a class="wa-btn-2"
+    href="https://api.whatsapp.com/send/?phone=62859144701587&text&type=phone_number&app_absent=0"><img
+      src="images/wa_float_short.png" alt="wa" width="55px" /></a>
+
+  <!-- footer sections -->
+
+  <footer class="footer-distributed shadow-lg">
+    <div class="footer-left">
+      <img src="images/setiadurian.png" />
+      <h3>Setia <span>Durian</span></h3>
+
+      <p class="footer-links">
+        <a href="#">Beranda</a>
+        |
+        <a href="#">Produk</a>
+        |
+        <a href="#">Kerja Sama</a>
+        <br />
+        <a href="#">Tentang Kami</a>
+        |
+        <a href="#">Kontak Kami</a>
+      </p>
+
+      <p class="footer-company-name">
+        © 2023 Setia Durian all right reserved.
+      </p>
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <i class="fa-solid fa-location-dot"></i>
+        <p>
+          <span>Bojongsari, Kec. Padaherang, Kab. Pangandaran</span> Jawa
+          Barat, Indonesia - 46384
+        </p>
+      </div>
+
+      <div>
+        <i class="fas fa-phone"></i>
+        <p>+62 859-144-701-587</p>
+      </div>
+      <div>
+        <i class="fas fa-envelope"></i>
+        <p>
+          <a href="mailto:setiawanmaulana328@gmail.com">support@setiadurian.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>Mengenai Toko Kami</span>
+        Kami Setia Durian merupakan toko penyedia durian dan produk olahan
+        durian secara online maupun offline.
+      </p>
+      <div class="footer-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- custom js  -->
+  <script src="script.js"></script>
+
+  <!-- custom bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
